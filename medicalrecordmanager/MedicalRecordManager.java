@@ -28,7 +28,7 @@ class MedicalRecordManager {
             System.out.println(record);
         }
     }
-
+// THIS RIGHT HERE MAIDEL I DONT THINK YOULL MISS IT
     public void saveRecordsToFile(String filename) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))) {
             oos.writeObject(records);
@@ -36,7 +36,7 @@ class MedicalRecordManager {
             e.printStackTrace();
         }
     }
-
+    // AND OFC THIS ONE TOO
     @SuppressWarnings("unchecked")
     public void loadRecordsFromFile(String filename) {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename))) {
